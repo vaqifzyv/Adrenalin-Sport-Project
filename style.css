@@ -1,0 +1,665 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #fff;
+  --secondary: #222;
+  --black: #000;
+  --yellow: #f6e015;
+  --green: #76ba1b;
+  --grey: #383725;
+  --dark-blue: #282938;
+  --tint-blue: #1c1e53;
+}
+
+.flex-row-container {
+  display: flex;
+  flex-direction: row;
+  margin-inline: auto;
+  align-items: center;
+}
+
+.black-btn {
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  border-radius: 10px;
+  background: #222;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.black-btn:hover {
+  border-radius: 20px;
+  background: var(--black);
+  transition: 0.7s;
+}
+
+.k-box {
+  border-radius: 15px;
+  background: var(--secondary);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 115px;
+  height: 115px;
+}
+
+/* ============ ELEMENTS ============= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#yellow-logo-line-degree {
+  position: absolute;
+  left: 38px;
+  top: 14px;
+  transform: rotateZ(145deg);
+}
+
+#yellow-logo-line {
+  position: absolute;
+  left: 145px;
+  top: 15px;
+}
+
+.logo {
+  color: var(--black);
+  font-family: Kumbh Sans;
+  font-size: 55px;
+  font-weight: 700;
+  margin-left: 20px;
+  cursor: default;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-items li {
+  margin-right: 40px;
+}
+
+.link-items li a {
+  color: var(--black);
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.link-btn {
+  width: 146px;
+  height: 45px;
+  padding-block: 10px;
+}
+
+main {
+  height: 800px;
+  padding-inline: 20px;
+  background: url(./assets/Frame\ 7.png);
+}
+
+.about {
+  width: 50%;
+}
+
+.about h1 {
+  position: relative;
+  left: 70px;
+  top: -125px;
+  color: var(--grey);
+  font-family: Kumbh Sans;
+  font-size: 86px;
+  font-weight: 800;
+  letter-spacing: -4.3px;
+  cursor: default;
+}
+
+.about p {
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  position: relative;
+  left: 70px;
+  top: -15px;
+  cursor: default;
+}
+
+.about a {
+  padding: 24px 68px;
+  position: relative;
+  top: 40px;
+  left: 70px;
+}
+
+.main-man-img {
+  width: 900px;
+  height: 600px;
+  position: relative;
+  top: -100px;
+}
+
+.k-section {
+  position: relative;
+  top: -150px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  background: var(--primary);
+}
+
+.k-boxes {
+  padding-block: 40px;
+  cursor: default;
+}
+
+.k-box {
+  color: var(--primary);
+  font-family: Kumbh Sans;
+  font-size: 46px;
+  font-weight: 700;
+  padding: 29px;
+}
+
+.box-text {
+  color: #111;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.blocks {
+  width: 90%;
+  margin: 0 auto;
+  background: url(./assets/Group\ 4.png);
+}
+
+.blocks-head h2 {
+  color: #222;
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 82px;
+  font-weight: 400;
+  position: relative;
+  top: -100px;
+  cursor: default;
+}
+
+.card {
+  width: 25%;
+  height: 350px;
+  border-radius: 8px;
+  border: 0px solid #000;
+  background: var(--yellow);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 25px;
+}
+
+.card img {
+  width: 300px;
+  height: 220px;
+  position: relative;
+  top: -100px;
+}
+
+.card h3 {
+  position: relative;
+  top: -120px;
+  color: #111;
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 48px;
+  font-weight: 400;
+  cursor: default;
+}
+
+.card p {
+  color: var(--black);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.156px;
+  position: relative;
+  top: -100px;
+  cursor: default;
+}
+
+.card a {
+  width: 225px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  top: -70px;
+}
+
+.kid-camping {
+  margin-inline: 100px;
+  margin-block: 100px;
+}
+
+.a-boy-playing {
+  width: 450px;
+  height: 500px;
+  position: absolute;
+  left: 90px;
+}
+
+.a-boy-playing-dashez {
+  width: 550px;
+  height: 500px;
+  position: relative;
+  left: -40px;
+  top: 50px;
+}
+
+.camping-about {
+  margin-left: 150px;
+}
+
+.camping-about h2 {
+  color: #222;
+  font-family: "Calligraffitti", cursive;
+  font-size: 82px;
+  font-weight: 400;
+  position: relative;
+  top: -130px;
+  cursor: default;
+}
+
+.camping-about p {
+  color: #333;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  width: 604px;
+  position: relative;
+  top: -100px;
+  cursor: default;
+}
+
+.camping-about a {
+  padding: 23px 75px;
+}
+
+.team {
+  background: url(./assets/team.png);
+  margin-top: 30px;
+}
+
+.team-head h2 {
+  color: #222;
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 82px;
+  font-weight: 400;
+  cursor: default;
+}
+
+.team-body {
+  background: #222;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 260px;
+}
+
+.team-photos {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  top: -123.5px;
+}
+
+.team-names {
+  background: #222;
+  margin-top: 10px;
+  align-items: center;
+  height: 60px;
+  justify-content: space-evenly;
+  color: var(--primary);
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  cursor: default;
+  cursor: default;
+}
+
+.team-about {
+  margin-top: 20px;
+  justify-content: space-evenly;
+  cursor: default;
+}
+
+.abouts {
+  display: flex;
+  color: var(--black);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.156px;
+  width: 320px;
+  height: 100px;
+  cursor: default;
+}
+
+.photos-section {
+  margin-top: 50px;
+}
+
+.photos-head {
+  color: #222;
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.photos {
+  background: #222;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 500px;
+  margin-top: 80px;
+}
+
+.photos-container {
+  position: relative;
+  top: -30px;
+  margin-right: 21.1px;
+}
+
+#scroll {
+  position: relative;
+  top: 200px;
+  left: -650px;
+  cursor: pointer;
+}
+
+.bars-section {
+  margin-top: 100px;
+  background: url(./assets/Group\ 4.png);
+}
+
+.bars-head h2 {
+  color: #222;
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.bars {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#arrow1 {
+  position: relative;
+  left: 900px;
+  cursor: pointer;
+}
+
+#arrow2 {
+  position: relative;
+  left: 615px;
+  cursor: pointer;
+}
+
+.bar {
+  background: #f1f1f1;
+  margin-top: 20px;
+}
+
+.second-bar {
+  color: #333;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  padding-block: 20px;
+  padding-left: 40px;
+  cursor: default;
+}
+
+.other-bars {
+  color: #222;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  padding-block: 25px;
+  padding-left: 40px;
+  cursor: default;
+}
+
+.first-bar {
+  background: #222;
+  color: var(--primary);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  padding-block: 25px;
+  padding-left: 40px;
+  margin-top: 70px;
+  cursor: default;
+}
+
+.services-section {
+  background: url(./assets/Group\ 4.png);
+}
+
+.services-head {
+  color: var(--secondary);
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 82px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 100px;
+  cursor: default;
+}
+
+.services {
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service {
+  width: 30%;
+  margin-right: 32px;
+  margin-top: 64px;
+}
+
+.service-photo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.service-body p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  cursor: default;
+}
+
+.service-body h3 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: default;
+}
+
+.service a {
+  color: var(--tint-blue);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer {
+  background: var(--secondary);
+  height: 400px;
+  margin-top: 145px;
+}
+
+.footer-main {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 50px;
+}
+
+footer .footer-main h3 {
+  color: var(--primary);
+  font-family: Kumbh Sans;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: default;
+}
+
+.logo-here h3 {
+  position: relative;
+  top: -10px;
+}
+
+.logo-here p {
+  width: 240px;
+  height: 100px;
+  color: var(--primary);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 16px;
+}
+
+.useful-links {
+  margin-left: 85px;
+}
+
+.useful-links h3 {
+  width: 140px;
+  margin-top: 10px;
+}
+
+.useful-links ul {
+  margin-top: 30px;
+}
+
+.useful-links ul li {
+  margin-top: 7px;
+}
+
+.useful-links ul li a {
+  color: var(--primary);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.subscribe {
+  position: relative;
+  left: 85px;
+}
+
+.subscribe h3 {
+  width: 293px;
+}
+
+.subscribe input {
+  margin-top: 30px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  width: 420px;
+  height: 70px;
+  padding-block: 26px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.subscribe input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.subscribe a {
+  width: 127px;
+  height: 70px;
+  border-radius: 10px;
+  background: var(--green);
+  color: var(--primary);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 23px;
+  position: relative;
+  top: -45.5px;
+  left: 295px;
+  border: none;
+}
+
+.subscribe a:hover {
+  background: #456f0f;
+  transition: 0.7s;
+}
+
+.follow-us {
+  width: 180px;
+  height: 60px;
+  position: relative;
+  top: -60px;
+  left: 80px;
+}
+
+.follow-us h3 {
+  color: var(--primary);
+  font-family: Kumbh Sans;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-copy {
+  color: var(--primary);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin-block: 15px;
+  cursor: default;
+}
